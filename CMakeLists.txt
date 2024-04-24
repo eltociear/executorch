@@ -559,6 +559,7 @@ if(EXECUTORCH_BUILD_PYBIND)
   endif()
 
   if(EXECUTORCH_BUILD_CUSTOM)
+    target_link_options_shared_lib(custom_ops)
     list(APPEND _dep_libs custom_ops)
   endif()
 
